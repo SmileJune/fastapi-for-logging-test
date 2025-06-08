@@ -11,6 +11,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Create a non-root user and switch to it
+COPY --chown=appuser:appuser . .
 RUN addgroup --system appuser && adduser --system --ingroup appuser appuser
 USER appuser
 
