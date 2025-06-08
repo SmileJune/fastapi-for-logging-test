@@ -1,9 +1,11 @@
 # Git
 .git
-.gitignore
 
 # Python
 __pycache__/
+__pypackages__/
+pip-selfcheck.json
+*.pyd
 *.py[cod]
 *$py.class
 *.so
